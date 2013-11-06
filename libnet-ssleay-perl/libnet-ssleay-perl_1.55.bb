@@ -5,7 +5,7 @@ SECTION = "libs"
 LICENSE = "OpenSSL"
 LIC_FILES_CHKSUM = "file://META.yml;md5=9885c1f5b3a5ad2f96a705a795a45d79"
 
-DEPENDS += "perl openssl"
+DEPENDS += "openssl"
 
 SRC_URI = "http://cpan.metacpan.org/authors/id/M/MI/MIKEM/Net-SSLeay-${PV}.tar.gz"
 SRC_URI[md5sum] = "473b8d66ca69d5784bb0e428721f58e0"
