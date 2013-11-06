@@ -1,6 +1,6 @@
-SUMMARY = ""
+SUMMARY = "Encoding and decoding of Base64 strings"
 AUTHOR = "Gisle Aas <gisle@activestate.com>"
-HOMEPAGE = "https://metacpan.org/module/Digest::base"
+HOMEPAGE = "https://metacpan.org/release/MIME-Base64"
 SECTION = "libs"
 LICENSE = "GPLv1+"
 LIC_FILES_CHKSUM = "file://README;md5=c8514b260866e0e8f75be6dd7cfbec15"
