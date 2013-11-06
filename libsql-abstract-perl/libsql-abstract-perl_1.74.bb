@@ -5,10 +5,7 @@ SECTION = "libs"
 LICENSE = "Artistic-1.0 | GPL-1.0+"
 LIC_FILES_CHKSUM = "file://META.yml;md5=9756eb4cd606e68606e3f7de3567eed8"
 
-DEPENDS = "perl-module-scalar-util \
-           perl-module-list-util \
-           perl-module-carp \
-           libclass-accessor-grouped-perl \
+DEPENDS = "libclass-accessor-grouped-perl \
            libgetopt-long-descriptive-perl \
            libhash-merge-perl \
            "
