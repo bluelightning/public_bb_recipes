@@ -9,8 +9,6 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/M/MJ/MJD/Devel-Trace-${PV}.tar.gz
 SRC_URI[md5sum] = "6cea68e7e12f99cb94c7802346f15ab3"
 SRC_URI[sha256sum] = "f501caf776ff7e986f76e02544d6ce234c89770173283f31df7dcc57800a3868"
 
-PR = "r7"
-
 S = "${WORKDIR}/Devel-Trace-${PV}"
 
 inherit cpan

@@ -14,8 +14,6 @@ DEPENDS = "libtest-exception-perl-native \
            libdatetime-locale-perl-native \
            "
 
-PR = "r1"
-
 S = "${WORKDIR}/DateTime-${PV}"
 
 inherit cpan_build

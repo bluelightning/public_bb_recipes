@@ -5,8 +5,6 @@ SECTION = "libs"
 LICENSE = "Artistic-1.0 | GPL-1.0+"
 LIC_FILES_CHKSUM = "file://README;md5=f62b75558ab2b0fe9b624cd94f9a646a"
 
-PR = "r2"
-
 SRC_URI = "http://cpan.metacpan.org/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.013.tar.gz"
 SRC_URI[md5sum] = "62b88b1f5f0e975a5d7c80cd46167b97"
 SRC_URI[sha256sum] = "ec37e03d90dc905679dab62a82f42cf0897ed79244b87fd9d531438dc3c31023"

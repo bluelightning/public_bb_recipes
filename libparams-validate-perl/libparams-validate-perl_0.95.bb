@@ -2,7 +2,6 @@ SUMMARY = "Params::Validate - Validate method/function parameters"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=a89fc6431f978476bd49e3f7a26a1a1e"
-PR = "r0"
 
 SRC_URI = "http://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-${PV}.tar.gz"
 SRC_URI[md5sum] = "f544f12357ae4ba44044cd8cb2b83a9f"

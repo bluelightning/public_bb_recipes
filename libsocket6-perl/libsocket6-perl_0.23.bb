@@ -2,7 +2,6 @@ SUMMARY = "Perl extensions for IPv6"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://README;md5=cfb4f6bcee0aa76f27c8b641ba40c4cc"
-PR = "r0"
 
 SRC_URI = "http://cpan.metacpan.org/authors/id/U/UM/UMEMOTO/Socket6-${PV}.tar.gz"
 SRC_URI[md5sum] = "2c02adb13c449d48d232bb704ddbd492"

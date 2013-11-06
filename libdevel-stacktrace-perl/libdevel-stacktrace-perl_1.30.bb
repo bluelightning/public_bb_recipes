@@ -9,8 +9,6 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Devel-StackTrace-${P
 SRC_URI[md5sum] = "e318d2cb00c5bcba41c93f1e7280ab05"
 SRC_URI[sha256sum] = "f4af79762263e477a65764ec9ff837e6e1c9f1f2c966c183036cd54bdee723d4"
 
-PR = "r7"
-
 S = "${WORKDIR}/Devel-StackTrace-${PV}"
 
 inherit cpan

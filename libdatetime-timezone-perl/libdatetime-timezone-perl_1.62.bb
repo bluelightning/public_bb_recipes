@@ -5,8 +5,6 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5073eed24d8ac152c95cd6be7c78a3c7"
 HOMEPAGE = "http://datetime.perl.org/"
 DEPENDS = "libclass-singleton-perl-native libparams-validate-perl-native"
 
-PR = "r1"
-
 SRC_URI = "http://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-TimeZone-${PV}.tar.gz"
 SRC_URI[md5sum] = "1f1cec90df196f34bfd6814fd23a6ba4"
 SRC_URI[sha256sum] = "2ae1b848f6ca6f3456089d07a1905be747776570d02309f1d7f6f122dbc08f28"
