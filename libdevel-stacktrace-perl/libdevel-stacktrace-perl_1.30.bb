@@ -13,8 +13,5 @@ S = "${WORKDIR}/Devel-StackTrace-${PV}"
 
 inherit cpan
 
-BBCLASSEXTEND="native"
-
-
-
+BBCLASSEXTEND = "native"
 
