@@ -5,7 +5,7 @@ SECTION = "libs"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=468f02e236a1ed7d9aea03806f906a5b"
 
-RDEPENDS_${PN} += 'perl-module-calar-list-utils libtest-number-delta-perl perl-module-test-simple'
+RDEPENDS_${PN} += 'perl-module-scalar-list-utils libtest-number-delta-perl perl-module-test-simple'
 
 SRC_URI = "http://cpan.metacpan.org/authors/id/M/MR/MRDVT/GPS-Point-0.20.tar.gz"
 SRC_URI[md5sum] = "9f486722d6bfa17cc2144a3c3c4a9b9f"
