@@ -11,8 +11,8 @@ SRC_URI[sha256sum] = "46b502e7a288d559429891eeb5d979461dd3ecc6a5c491ead85d165b6e
 
 S = "${WORKDIR}/WWW-RobotRules-${PV}"
 
-RDEPENDS_${PN} += "liburi-perl"
-
 inherit cpan
+
+RDEPENDS_${PN} += "liburi-perl"
 
 BBCLASSEXTEND = "native"

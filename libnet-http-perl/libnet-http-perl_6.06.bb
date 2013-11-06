@@ -9,20 +9,19 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/G/GA/GAAS/Net-HTTP-${PV}.tar.gz"
 SRC_URI[md5sum] = "6e74d76205f168775de68347266793a7"
 SRC_URI[sha256sum] = "1d4e3ced899efad12431564d93abe73dd2a1224aa208af5f4ab829e7a2dd39d4"
 
+S = "${WORKDIR}/Net-HTTP-${PV}"
+
+inherit cpan
+
 RDEPENDS_${PN} += "libcompress-raw-zlib-perl \
                    libio-compress-gzip-perl \
                    libio-select-perl \
                    libio-socket-inet-perl \
                    "
 
-RPROVIDES_${PN} += "libnet-http-perl \
-                    libnet-http-nb-perl \
+RPROVIDES_${PN} += "libnet-http-nb-perl \
                     libnet-https-perl \
                     libnet-http-methodss \
                     "
-                    
-S = "${WORKDIR}/Net-HTTP-${PV}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"

@@ -9,6 +9,10 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/S/SH/SHAY/libnet-${PV}.tar.gz"
 SRC_URI[md5sum] = "1e997bbc53c073e7b4fd23b5bf92c87e"
 SRC_URI[sha256sum] = "67edd05f0a2b93ca8fe9ba98d45667df74b78b1eaeb502404ae511e7a5f6513c"
 
+S = "${WORKDIR}/libnet-${PV}"
+
+inherit cpan
+
 RDEPENDS_${PN} += "libio-socket-perl \
                    libsocket-perl \
                    "
@@ -28,9 +32,5 @@ RPROVIDES_${PN} += "libnet-cmd-perl \
                     libnet-ftp-i-perl \
                     libnet-ftp-l-perl \
                     "
-                    
-S = "${WORKDIR}/libnet-${PV}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"

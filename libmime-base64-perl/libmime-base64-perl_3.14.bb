@@ -11,8 +11,8 @@ SRC_URI[sha256sum] = "125a9427625477f90c8214d2ec80714c443c2d15ac390b7111fb1e19fb
 
 S = "${WORKDIR}/MIME-Base64-${PV}"
 
-RPROVIDES_${PN} += 'libmime-base64-perl libmime-quotedprint-perl'
-
 inherit cpan
+
+RPROVIDES_${PN} += "libmime-quotedprint-perl"
 
 BBCLASSEXTEND = "native"

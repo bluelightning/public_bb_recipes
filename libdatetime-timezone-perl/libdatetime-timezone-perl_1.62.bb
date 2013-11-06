@@ -4,22 +4,7 @@ LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=5073eed24d8ac152c95cd6be7c78a3c7"
 HOMEPAGE = "http://datetime.perl.org/"
 DEPENDS = "libclass-singleton-perl-native libparams-validate-perl-native"
-RDEPENDS_${PN} = "	libclass-singleton-perl \
-			libclass-load-perl \
-			libconstant-perl \
-			libparams-validate-perl \
-			perl-module-test-more \
-			perl-module-cwd \
-			perl-module-file-basename \
-			perl-module-file-spec \
-			perl-module-file-compare \
-			perl-module-file-find \
-			perl-module-list-util \
-			perl-module-strict \
-			perl-module-vars \
-			perl-module-warnings \
-			perl-module-parent \
-"
+
 PR = "r1"
 
 SRC_URI = "http://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-TimeZone-${PV}.tar.gz"
@@ -30,6 +15,23 @@ S = "${WORKDIR}/DateTime-TimeZone-${PV}"
 
 inherit cpan
 
-BBCLASSEXTEND="native"
+RDEPENDS_${PN} += "libclass-singleton-perl \
+                   libclass-load-perl \
+                   libconstant-perl \
+                   libparams-validate-perl \
+                   perl-module-test-more \
+                   perl-module-cwd \
+                   perl-module-file-basename \
+                   perl-module-file-spec \
+                   perl-module-file-compare \
+                   perl-module-file-find \
+                   perl-module-list-util \
+                   perl-module-strict \
+                   perl-module-vars \
+                   perl-module-warnings \
+                   perl-module-parent \
+                   "
+
+BBCLASSEXTEND = "native"
 
 

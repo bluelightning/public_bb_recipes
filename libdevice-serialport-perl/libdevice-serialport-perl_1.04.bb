@@ -9,8 +9,6 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/C/CO/COOK/Device-SerialPort-${PV}
 SRC_URI[md5sum] = "82c698151f934eb28c65d1838cee7d9e"
 SRC_URI[sha256sum] = "d392567cb39b4ea606c0e0acafd8ed72320311b995336ece5fcefcf9b150e9d7"
 
-RDEPENDS_${PN} += "libtest-more-perl"
-
 S = "${WORKDIR}/Device-SerialPort-${PV}"
 
 inherit cpan
@@ -21,4 +19,6 @@ do_configure_prepend () {
 	sed -i 's:\./configure\(.[^-]\):./configure --build=${BUILD_SYS} --host=${HOST_SYS} --target=${TARGET_SYS} --prefix=${prefix} --exec_prefix=${exec_prefix} --bindir=${bindir} --sbindir=${sbindir} --libexecdir=${libexecdir} --datadir=${datadir} --sysconfdir=${sysconfdir} --sharedstatedir=${sharedstatedir} --localstatedir=${localstatedir} --libdir=${libdir} --includedir=${includedir} --oldincludedir=${oldincludedir} --infodir=${infodir} --mandir=${mandir}\1:' Makefile.PL
 }
 
-BBCLASSEXTEND="native"
+RDEPENDS_${PN} += "libtest-more-perl"
+
+BBCLASSEXTEND = "native"

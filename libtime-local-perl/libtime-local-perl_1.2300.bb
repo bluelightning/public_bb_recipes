@@ -9,15 +9,15 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Time-Local-${PV}.tar
 SRC_URI[md5sum] = "68e1be54c151cf131f9d4168b3e662f9"
 SRC_URI[sha256sum] = "b2acca03700a09f8ae737d3084f3f6287e983da9ab7b537c6599c291b669fb49"
 
+S = "${WORKDIR}/Time-Local-${PV}"
+
+inherit cpan
+
 RDEPENDS_${PN} += "perl-module-strict \
                    perl-module-vars \
                    perl-module-carp \
                    perl-module-exporter \
                    libconstant-perl \
                    "
-
-S = "${WORKDIR}/Time-Local-${PV}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"

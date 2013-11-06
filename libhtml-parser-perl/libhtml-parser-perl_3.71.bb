@@ -9,7 +9,15 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/G/GA/GAAS/HTML-Parser-${PV}.tar.g
 SRC_URI[md5sum] = "9128a45893097dfa3bf03301b19c5efe"
 SRC_URI[sha256sum] = "be918b3749d3ff93627f72ee4b825683332ecb4c81c67a3a8d72b0435ffbd802"
 
-RDEPENDS_${PN} += 'libhtml-tagset-perl libxsloader-perl'
+S = "${WORKDIR}/HTML-Parser-${PV}"
+
+EXTRA_CPANFLAGS = "EXPATLIBPATH=${STAGING_LIBDIR} EXPATINCPATH=${STAGING_INCDIR}"
+
+inherit cpan
+
+RDEPENDS_${PN} += "libhtml-tagset-perl \
+                   libxsloader-perl \
+                   "
 
 RPROVIDES_${PN} += "libhtml-entities-perl \
                     libhtml-filter-perl \
@@ -19,11 +27,5 @@ RPROVIDES_${PN} += "libhtml-entities-perl \
                     libhtml-pullparser-perl \
                     libhtml-tokeparser-perl \
                     "
-
-S = "${WORKDIR}/HTML-Parser-${PV}"
-
-EXTRA_CPANFLAGS = "EXPATLIBPATH=${STAGING_LIBDIR} EXPATINCPATH=${STAGING_INCDIR}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"

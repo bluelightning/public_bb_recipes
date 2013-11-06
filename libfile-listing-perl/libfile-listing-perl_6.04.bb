@@ -9,18 +9,17 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/G/GA/GAAS/File-Listing-${PV}.tar.
 SRC_URI[md5sum] = "83f636b477741f3a014585bb9cc079a6"
 SRC_URI[sha256sum] = "1e0050fcd6789a2179ec0db282bf1e90fb92be35d1171588bd9c47d52d959cf5"
 
-RDEPENDS_${PN} += 'libhttp-date-perl'
+S = "${WORKDIR}/File-Listing-${PV}"
 
-RPROVIDES_${PN} += "libfile-listing-perl \
-                    libfile-listing-apache-perl \
+inherit cpan
+
+RDEPENDS_${PN} += "libhttp-date-perl"
+
+RPROVIDES_${PN} += "libfile-listing-apache-perl \
                     libfile-listing-dosftp-perl \
                     libfile-listing-netware-perl \
                     libfile-listing-unix-perl \
                     libfile-listing-vms-perl \
                     "
-
-S = "${WORKDIR}/File-Listing-${PV}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"

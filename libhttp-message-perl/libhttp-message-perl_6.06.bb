@@ -9,6 +9,10 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/G/GA/GAAS/HTTP-Message-${PV}.tar.
 SRC_URI[md5sum] = "e563ac516e28d33f65bc0f295f625f85"
 SRC_URI[sha256sum] = "087e97009c5239dca4631cf433d836771b3fc5ba5685eef1965f9d3415cbad63"
 
+S = "${WORKDIR}/HTTP-Message-${PV}"
+
+inherit cpan
+
 RDEPENDS_${PN} += "libcompress-raw-zlib-perl \
                    libencode-perl \
                    libencode-locale-perl \
@@ -38,9 +42,4 @@ RPROVIDES_${PN} += "libhttp-headers-perl \
                     libhttp-headers-auth-perl \
                     libhttp-headers-etag-perl \
                     "
-                    
-S = "${WORKDIR}/HTTP-Message-${PV}"
-
-inherit cpan
-
 BBCLASSEXTEND = "native"

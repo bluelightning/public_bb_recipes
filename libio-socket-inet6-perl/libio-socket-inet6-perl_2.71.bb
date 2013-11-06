@@ -1,5 +1,4 @@
 SUMMARY = "IO::Socket::INET6 - Object interface for AF_INET/AF_INET6 domain sockets"
-
 AUTHOR = "Shlomi Fish <shlomif@shlomifish.org>"
 HOMEPAGE = "https://metacpan.org/module/IO::Socket::INET6"
 SECTION = "libs"

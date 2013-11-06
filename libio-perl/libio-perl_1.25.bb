@@ -9,8 +9,11 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/G/GB/GBARR/IO-${PV}.tar.gz"
 SRC_URI[md5sum] = "b88aaf2bb7437725b11e9eb48dfb6c93"
 SRC_URI[sha256sum] = "89790db8b9281235dc995c1a85d532042ff68a90e1504abd39d463f05623e7b5"
 
-RPROVIDES_${PN} += "libio-perl \
-                    libio-dir-perl \
+S = "${WORKDIR}/IO-${PV}"
+
+inherit cpan
+
+RPROVIDES_${PN} += "libio-dir-perl \
                     libio-file-perl \
                     libio-handle-perl \
                     libio-pipe-perl \
@@ -21,9 +24,5 @@ RPROVIDES_${PN} += "libio-perl \
                     libio-socket-inet-perl \
                     libio-socket-unix-perl \
                     "
-                    
-S = "${WORKDIR}/IO-${PV}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"

@@ -5,6 +5,14 @@ SECTION = "libs"
 LICENSE = "Artistic-1.0 | GPL-1.0+"
 LIC_FILES_CHKSUM = "file://README;md5=b7d978c7767cb9fb392f80103af8ca0a"
 
+SRC_URI = "http://cpan.metacpan.org/authors/id/G/GA/GAAS/libwww-perl-${PV}.tar.gz"
+SRC_URI[libwww-perl-5.834.md5sum] = "f2ed8a461f76556c9caed9087f47c86c"
+SRC_URI[libwww-perl-5.834.sha256sum] = "1a50eb91d1deeca3be10982e129e786809ad6f0f8049b156e91e889e5a7288ff"
+
+S = "${WORKDIR}/libwww-perl-${PV}"
+
+inherit cpan
+
 RDEPENDS_${PN} += "libdigest-md5-perl \
                    libencode-perl \
                    libencode-locale-perl \
@@ -56,12 +64,5 @@ RPROVIDES_${PN} += "liblwp-perl \
                     liblwp-protocol-nntp-perl \
                     liblwp-protocol-nogo-perl \
                     "
-SRC_URI = "http://cpan.metacpan.org/authors/id/G/GA/GAAS/libwww-perl-${PV}.tar.gz"
-SRC_URI[libwww-perl-5.834.md5sum] = "f2ed8a461f76556c9caed9087f47c86c"
-SRC_URI[libwww-perl-5.834.sha256sum] = "1a50eb91d1deeca3be10982e129e786809ad6f0f8049b156e91e889e5a7288ff"
-
-S = "${WORKDIR}/libwww-perl-${PV}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"

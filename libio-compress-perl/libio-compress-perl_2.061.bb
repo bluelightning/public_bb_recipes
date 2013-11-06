@@ -9,6 +9,10 @@ SRC_URI = "http://cpan.metacpan.org/authors/id/P/PM/PMQS/IO-Compress-${PV}.tar.g
 SRC_URI[md5sum] = "0dba831e748f03e549eaf288026ef099"
 SRC_URI[sha256sum] = "c8fdbc7d8d3601bc4c6d43455d405e0772098ceb1a38fefa72adef5083c6beba"
 
+S = "${WORKDIR}/IO-Compress-${PV}"
+
+inherit cpan
+
 RPROVIDES_${PN} += "libcompress-zlib-perl \
                     libfile-globmapper-perl \
                     libio-compress-base-perl \
@@ -36,9 +40,5 @@ RPROVIDES_${PN} += "libcompress-zlib-perl \
                     libio-uncompress-adapter-identity-perl \
                     libio-uncompress-adapter-inflate \
                     "
-
-S = "${WORKDIR}/IO-Compress-${PV}"
-
-inherit cpan
 
 BBCLASSEXTEND = "native"
