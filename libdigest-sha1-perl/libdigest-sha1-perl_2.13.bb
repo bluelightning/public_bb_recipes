@@ -3,7 +3,6 @@ AUTHOR = "Gisle Aas <gisle@activestate.com>"
 HOMEPAGE = "https://metacpan.org/module/Digest::SHA1"
 SECTION = "libs"
 LICENSE = "Artistic-1.0 | GPL-1.0+"
-LICENSE = "GPLv1+"
 LIC_FILES_CHKSUM = "file://README;md5=2880954e370b62221b4546e663c39417"
 
 SRC_URI = "http://cpan.metacpan.org/authors/id/G/GA/GAAS/Digest-SHA1-2.13.tar.gz"
