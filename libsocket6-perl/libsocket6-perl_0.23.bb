@@ -1,4 +1,4 @@
-DESCRIPTION = "Perl extensions for IPv6"
+SUMMARY = "Perl extensions for IPv6"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://README;md5=cfb4f6bcee0aa76f27c8b641ba40c4cc"

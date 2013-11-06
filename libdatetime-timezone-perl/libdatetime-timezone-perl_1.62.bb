@@ -1,4 +1,4 @@
-DESCRIPTION = "DateTime::TimeZone - Time zone object base class and factory"
+SUMMARY = "DateTime::TimeZone - Time zone object base class and factory"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=5073eed24d8ac152c95cd6be7c78a3c7"

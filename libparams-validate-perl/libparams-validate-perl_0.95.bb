@@ -1,4 +1,4 @@
-DESCRIPTION = "Params::Validate - Validate method/function parameters"
+SUMMARY = "Params::Validate - Validate method/function parameters"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=a89fc6431f978476bd49e3f7a26a1a1e"

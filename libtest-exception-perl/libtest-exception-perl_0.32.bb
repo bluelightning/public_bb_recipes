@@ -1,4 +1,4 @@
-DESCRIPTION = "Test::Exception - Test exception based code"
+SUMMARY = "Test::Exception - Test exception based code"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://README;md5=64db295789c2e958f0d68ea5e5ea0c9b"

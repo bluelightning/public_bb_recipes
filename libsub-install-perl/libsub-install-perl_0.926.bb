@@ -1,4 +1,4 @@
-DESCRIPTION = "Sub::Install - install subroutines into packages easily"
+SUMMARY = "Sub::Install - install subroutines into packages easily"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=28da7ee756be3a13c1cf94aaf219ba8d"

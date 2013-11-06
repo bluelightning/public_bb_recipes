@@ -1,4 +1,4 @@
-DESCRIPTION = "Sub::Uplevel - apparently run a function in a higher stack frame"
+SUMMARY = "Sub::Uplevel - apparently run a function in a higher stack frame"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=240dcddb52ac3d2c14ac4fa2795d9249"

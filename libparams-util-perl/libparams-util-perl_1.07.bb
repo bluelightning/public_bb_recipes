@@ -1,4 +1,4 @@
-DESCRIPTION = "Params::Util - Simple, compact and correct param-checking functions"
+SUMMARY = "Params::Util - Simple, compact and correct param-checking functions"
 SECTION = "libs"
 LICENSE = "GPL-2.0+"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=b41a38c91c3e99543225495ccf83895d"
