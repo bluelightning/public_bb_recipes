@@ -1,4 +1,4 @@
-SUMARRY = "This package contains the Parser.pm module with friends."
+SUMMARY = "This package contains the Parser.pm module with friends."
 AUTHOR = "Gisle Aas <gisle@activestate.com>"
 HOMEPAGE = "https://metacpan.org/release/HTML-Parser"
 SECTION = "libs"
